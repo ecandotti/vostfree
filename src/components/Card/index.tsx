@@ -1,43 +1,25 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { View, Text, Image, TouchableOpacity } from 'react-native'
-import IonIcons from 'react-native-vector-icons/Ionicons'
 
-import AnimeContext from 'configs/contexts/AnimeContext'
-
-import { CardTypes } from 'types/CardTypes'
+import { CardTypes } from '@types/CardTypes'
 
 const Index: React.FC<CardTypes> = ({ item, navigation }) => {
-    const { watchlist, addOrRemoveToWatchlist } = useContext(AnimeContext)
-    const { name, thumbnail, id } = item
-
-    // const isFav = favList.filter((favItem) => favItem.id === id)
-
     return (
-        <TouchableOpacity
-            onPress={() =>
-                navigation.navigate('Character', {
-                    character: item,
-                })
-            }>
+        <TouchableOpacity style={{ width: 130, marginRight: 20 }}>
             <View
                 style={{
                     display: 'flex',
-                    flexDirection: 'row',
                     justifyContent: 'space-between',
-                    marginBottom: 20,
+                    alignItems: 'center',
+                    marginHorizontal: 10,
                 }}>
                 <Image
-                    source={{ uri: `${thumbnail?.path}.${thumbnail?.extension}` }}
-                    style={{ width: 100, height: 100 }}
+                    source={{ uri: `${item.thumbnail?.path}${item.thumbnail?.extension}` }}
+                    style={{ width: 130, height: 200 }}
                 />
-                <Text>{name}</Text>
-                <TouchableOpacity onPress={() => addOrRemoveToWatchlist(item)}>
-                    {watchlist.length !== 0 ? (
-                        <IonIcons name="heart" size={16} />
-                    ) : (
-                        <IonIcons name="heart-outline" size={16} />
-                    )}
-                </TouchableOpacity>
+                <Text style={{ color: 'white', marginTop: 10, fontWeight: 'bold' }}>
+                    {item.title}
+                </Text>
             </View>
         </TouchableOpacity>
     )

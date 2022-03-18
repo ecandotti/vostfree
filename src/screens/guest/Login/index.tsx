@@ -40,6 +40,7 @@ const Index: React.FC = () => {
                     color="#dfe6e9"
                     icon="person-outline"
                     type="text"
+                    style={{ bgColor: '#bdc3c7' }}
                 />
                 <TextInput
                     placeholder="Password"
@@ -48,6 +49,7 @@ const Index: React.FC = () => {
                     color="#dfe6e9"
                     icon="key-outline"
                     type="password"
+                    style={{ bgColor: '#bdc3c7' }}
                 />
                 <Button
                     title="Connexion"

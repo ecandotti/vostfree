@@ -15,10 +15,11 @@ const SelfcareStack: React.FC = () => {
         <Tab.Navigator
             sceneContainerStyle={{ backgroundColor: '#2c3e50' }}
             screenOptions={{
-                headerShown: false,
                 tabBarStyle: { backgroundColor: '#34495e' },
                 tabBarActiveTintColor: '#4ded77',
                 tabBarInactiveTintColor: '#bdc3c7',
+                headerStyle: { backgroundColor: '#34495e' },
+                headerTitleStyle: { fontSize: 28, color: 'white', textAlign: 'left' },
             }}>
             <Tab.Screen
                 name="Catalogue"
