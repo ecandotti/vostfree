@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { TextInput } from 'components/styled-components'
+import { TextInput } from '@components/styled-components'
 
-import { SearchTypes } from 'types/SearchTypes'
+import { SearchTypes } from '../../types/SearchTypes'
 
 const Index: React.FC<SearchTypes> = ({ customSearch, setCustomSearch, placeholder }) => {
     return (
@@ -10,7 +10,8 @@ const Index: React.FC<SearchTypes> = ({ customSearch, setCustomSearch, placehold
             icon="search-outline"
             placeholder={placeholder}
             value={customSearch}
-            color="#fff"
+            style={{ bgColor: '#ecf0f1' }}
+            color="#000"
             type={'text'}
             onChangeText={(e: any) => setCustomSearch(e)}
         />

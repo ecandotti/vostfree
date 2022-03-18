@@ -37,6 +37,7 @@ module.exports = function (api) {
                         '@components': './src/components',
                         '@screens': './src/screens',
                         '@configs': './src/configs',
+                        '@types': './src/types',
                     },
                 },
             ],

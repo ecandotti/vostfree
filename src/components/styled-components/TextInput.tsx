@@ -1,19 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 import IonIcons from 'react-native-vector-icons/Ionicons'
-import { TextInputTypes } from 'types/styled-components/TextInputTypes'
 IonIcons.loadFont()
+import { TextInputTypes } from '../../types/styled-components/TextInputTypes'
 
 export const TextInput: React.FC<TextInputTypes> = ({
     icon,
     placeholder,
     value,
     onChangeText,
+    style,
     color,
     secureTextEntry,
 }) => (
-    <View color={color}>
-        <IconContainer>
+    <View color={color} style={style}>
+        <IconContainer style={style}>
             <IonIcons name={icon} size={18} />
         </IconContainer>
         <TextInputContainer
@@ -21,6 +22,7 @@ export const TextInput: React.FC<TextInputTypes> = ({
             value={value}
             onChangeText={onChangeText}
             color={color}
+            style={style}
             secureTextEntry={secureTextEntry}
         />
     </View>
@@ -34,17 +36,18 @@ const View = styled.View`
     margin-top: 15px;
     margin-bottom: 15px;
     border-radius: 10px;
-    background-color: ${props => (props.color ? props.color : 'white')};
+    background-color: ${({ style }: any) => (style?.bgColor ? style.bgColor : 'white')};
 `
 
 const IconContainer = styled.View`
     margin-right: 10px;
+    background-color: ${({ style }: any) => (style?.bgColor ? style.bgColor : 'white')};
+    border: none;
 `
 
 const TextInputContainer = styled.TextInput`
     flex: 1;
-    border: 1px solid ${props => (props.color ? props.color : 'white')};
     border-radius: 5px;
-    background-color: ${props => (props.color ? props.color : 'white')};
+    background-color: ${({ style }: any) => (style?.bgColor ? style.bgColor : 'white')};
     color: black;
 `

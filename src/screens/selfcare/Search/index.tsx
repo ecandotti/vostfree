@@ -8,7 +8,7 @@ import Search from '@components/Search'
 import Card from '@components/Card'
 import { Container } from '@components/styled-components'
 
-import { ScreenTypes } from 'types/ScreenTypes'
+import { ScreenTypes } from '@types/ScreenTypes'
 
 const Index: React.FC<ScreenTypes> = ({ navigation }) => {
     const { watchlist } = useContext(AnimeContext)

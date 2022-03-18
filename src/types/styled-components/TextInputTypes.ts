@@ -7,5 +7,6 @@ export interface TextInputTypes {
     onChangeText: any
     color: string
     secureTextEntry?: boolean
+    style?: any
     type: React.HTMLInputTypeAttribute
 }
