@@ -26,20 +26,21 @@ export const AnimeContextProvider: React.FC = ({ children }) => {
         AsyncStorage.setItem('watchlist', JSON.stringify(watchlist))
     }, [watchlist])
 
-    const addOrRemoveToWatchlist = (item: ItemTypes) => {
-        const alreadyWatchlisted = watchlist.findIndex((el: ItemTypes) => el.id === item.id)
+    const addOrRemoveToWatchlist = (item: any) => {
+        console.log('oko')
+        const alreadyWatchlisted = watchlist.findIndex((el: any) => el.id === item.id)
 
         if (alreadyWatchlisted !== -1) {
-            setWatchlist(watchlist.filter((el: ItemTypes) => el.id !== item.id))
+            setWatchlist(watchlist.filter((el: any) => el.id !== item.id))
         } else {
             setWatchlist([...watchlist, item])
         }
     }
 
     const context: AnimeContextTypes = {
-        addOrRemoveToWatchlist: () => {},
-        watchlist: [],
-        setWatchlist: () => {},
+        addOrRemoveToWatchlist,
+        watchlist,
+        setWatchlist,
     }
     return <AnimeContext.Provider value={context}>{children}</AnimeContext.Provider>
 }
