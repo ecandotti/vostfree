@@ -9,8 +9,6 @@ import { TitleText } from '@components/styled-components/TitleText'
 import { Container } from '../styled-components'
 
 const Index: React.FC<RowTypes> = ({ title, items }) => {
-    const renderCard = ({ item }: any) => <Card item={item} />
-
     return (
         <View style={{ marginTop: 10 }}>
             <Container>
@@ -21,7 +19,7 @@ const Index: React.FC<RowTypes> = ({ title, items }) => {
             </Container>
             <FlatList
                 data={items}
-                renderItem={renderCard}
+                renderItem={({ item }: any) => <Card item={item} />}
                 style={{ marginTop: 10 }}
                 keyExtractor={(item: any) => item.id}
                 showsHorizontalScrollIndicator={false}
