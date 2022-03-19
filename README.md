@@ -42,8 +42,12 @@ To Do :
 -   [x] Private access (login)
 -   [_] Read video
 -   [_] Rate video
+-   [_] Add Sentry
+-   [x] Set custom splash screen ios
+-   [_] Share button
 -   [x] Search function
 -   [x] Add/Remove/Read/Store Watchlist
 -   [_] Store Watchlist in cache
+-   [_] Store Watchlist video in cache
 -   [_] Add Ads
 -   [x] Design
