@@ -18,8 +18,12 @@ const SelfcareStack: React.FC = () => {
                 tabBarStyle: { backgroundColor: '#34495e' },
                 tabBarActiveTintColor: '#4ded77',
                 tabBarInactiveTintColor: '#bdc3c7',
+                headerTitleAlign: 'left',
                 headerStyle: { backgroundColor: '#34495e' },
-                headerTitleStyle: { fontSize: 28, color: 'white', textAlign: 'left' },
+                headerTitleStyle: {
+                    fontSize: 28,
+                    color: 'white',
+                },
             }}>
             <Tab.Screen
                 name="Catalogue"
