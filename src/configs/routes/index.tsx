@@ -9,6 +9,8 @@ import SelfcareStack from './SelfcareStack'
 import Login from '@screens/guest/Login'
 import Details from '@screens/selfcare/Details'
 
+import GoBack from '@components/GoBack'
+
 const Stack = createNativeStackNavigator()
 
 const StackNavigator = () => {
@@ -27,7 +29,12 @@ const StackNavigator = () => {
                         <Stack.Screen
                             name="Details"
                             component={Details}
-                            options={{ animationTypeForReplace: 'push' }}
+                            options={({ navigation }) => ({
+                                animationTypeForReplace: 'push',
+                                headerStyle: { backgroundColor: '#34495e' },
+                                headerLeft: () => <GoBack onPress={() => navigation.goBack()} />,
+                                headerTitle: '',
+                            })}
                         />
                     </Stack.Group>
                 ) : (
