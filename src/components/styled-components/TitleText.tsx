@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { TitleTextTypes } from '@types/styled-components/TitleTextTypes'
+import { TitleTextTypes } from '@customTypes/styled-components/TitleTextTypes'
 
 export const TitleText: React.FC<TitleTextTypes> = ({ title }) => <Text>{title}</Text>
 

@@ -21,7 +21,7 @@
             "@components/*": ["src/components/*"],
             "@screens/*": ["src/screens/*"],
             "@configs/*": ["src/configs/*"],
-            "@types/*": ["src/types/*"]
+            "@customTypes/*": ["src/types/*"]
         }
     },
     "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js"]

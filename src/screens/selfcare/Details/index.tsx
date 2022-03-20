@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { Text, Image, View, TouchableOpacity, FlatList, Share } from 'react-native'
 import IonIcons from 'react-native-vector-icons/Ionicons'
 
-import { ScreenTypes } from 'types/ScreenTypes'
+import { ScreenTypes } from '@customTypes/ScreenTypes'
 
 import AnimeContext from '@configs/contexts/AnimeContext'
 

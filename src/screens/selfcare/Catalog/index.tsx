@@ -3,7 +3,7 @@ import { ScrollView } from 'react-native'
 
 import Row from '@components/Row'
 
-import { ScreenTypes } from '@types/ScreenTypes'
+import { ScreenTypes } from '@customTypes/ScreenTypes'
 
 import { AniMock } from '../../../utils/animock'
 

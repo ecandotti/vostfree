@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, Image, TouchableOpacity } from 'react-native'
 
-import { CardTypes } from '@types/CardTypes'
+import { CardTypes } from '@customTypes/CardTypes'
 import { useNavigation } from '@react-navigation/native'
 
 const Index: React.FC<CardTypes> = ({ item }) => {
