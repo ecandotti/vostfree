@@ -4,7 +4,7 @@ import IonIcons from 'react-native-vector-icons/Ionicons'
 
 import { TitleText } from '../styled-components'
 
-const Index: React.FC = ({ video }: any) => {
+const Index: React.FC<any> = ({ video }) => {
     console.log(video)
     return (
         <TouchableOpacity style={{ display: 'flex', flexDirection: 'row', marginVertical: 5 }}>

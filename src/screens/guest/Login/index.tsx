@@ -5,7 +5,7 @@ import { Container, Button, TextInput } from '@components/styled-components'
 
 import AuthContext from '@configs/contexts/AuthContext'
 
-import { UserLogin } from 'types/UserLoginTypes'
+import { UserLogin } from '@customTypes/UserLoginTypes'
 
 const win = Dimensions.get('window')
 

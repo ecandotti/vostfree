@@ -3,7 +3,7 @@ import { FlatList } from 'react-native'
 
 import AnimeContext from '@configs/contexts/AnimeContext'
 
-import { ScreenTypes } from 'types/ScreenTypes'
+import { ScreenTypes } from '@customTypes/ScreenTypes'
 
 import { Container } from '@components/styled-components'
 import Card from '@components/Card'

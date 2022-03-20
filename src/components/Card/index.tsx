@@ -6,6 +6,7 @@ import { useNavigation } from '@react-navigation/native'
 
 const Index: React.FC<CardTypes> = ({ item }) => {
     const navigation = useNavigation()
+
     return (
         <TouchableOpacity
             style={{ width: 130, marginRight: 20 }}

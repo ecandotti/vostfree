@@ -28,10 +28,7 @@ const Index: React.FC<ScreenTypes> = ({ navigation }) => {
                 placeholder="Naruto Shippuden..."
             />
             {fuseSearch.length < 2 ? (
-                <FlatList
-                    data={fuseSearch}
-                    renderItem={(item: any) => <Card item={item.item} navigation={navigation} />}
-                />
+                <FlatList data={fuseSearch} renderItem={(item: any) => <Card item={item.item} />} />
             ) : null}
         </Container>
     )

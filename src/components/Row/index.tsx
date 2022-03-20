@@ -1,12 +1,10 @@
-import { View, Text, FlatList } from 'react-native'
+import { View, FlatList } from 'react-native'
 import React from 'react'
 
 import { RowTypes } from 'src/types/RowTypes'
-import { ItemTypes } from 'src/types/ItemTypes'
 
 import Card from '@components/Card'
-import { TitleText } from '@components/styled-components/TitleText'
-import { Container } from '../styled-components'
+import { TitleText, Container } from '@components/styled-components'
 
 const Index: React.FC<RowTypes> = ({ title, items }) => {
     return (

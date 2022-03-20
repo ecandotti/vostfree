@@ -2,7 +2,6 @@ import AsyncStorage from '@react-native-async-storage/async-storage'
 import React, { useState, createContext, useEffect } from 'react'
 
 import { AnimeContextTypes } from '@customTypes/AnimeContextTypes'
-import { ItemTypes } from '@customTypes/ItemTypes'
 
 const AnimeContext = createContext<AnimeContextTypes>({
     addOrRemoveToWatchlist: () => {},
@@ -26,7 +25,7 @@ export const AnimeContextProvider: React.FC = ({ children }) => {
         AsyncStorage.setItem('watchlist', JSON.stringify(watchlist))
     }, [watchlist])
 
-    const addOrRemoveToWatchlist = async (item: any) => {
+    const addOrRemoveToWatchlist = (item: any) => {
         console.log('oko')
         const alreadyWatchlisted = watchlist.findIndex((el: any) => el.id === item.id)
 

@@ -3,8 +3,8 @@ import React, { useState, createContext, useEffect } from 'react'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 
 import { CONNECT_URI } from '@env'
-import { AuthContextTypes } from 'types/AuthContextTypes'
-import { UserLogin } from 'types/UserLoginTypes'
+import { AuthContextTypes } from '@customTypes/AuthContextTypes'
+import { UserLogin } from '@customTypes/UserLoginTypes'
 
 const AuthContext = createContext<AuthContextTypes>({
     login: () => {},
