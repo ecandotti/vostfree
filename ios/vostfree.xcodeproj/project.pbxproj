@@ -11,9 +11,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		30534EEC8EA5E74C179B642A /* libPods-vostfree-vostfreeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1995E4DBA1FFEFDBA06A306A /* libPods-vostfree-vostfreeTests.a */; };
-		76B2AEF74E06EEB64C3107DC /* libPods-vostfree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A93142283410FF3D12E7092 /* libPods-vostfree.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8A02317A1735D8987C072642 /* libPods-vostfree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1762645A09DC1CB9D5EFCC9D /* libPods-vostfree.a */; };
+		E174D05F8454C8071991231E /* libPods-vostfree-vostfreeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DEB5DD28C90A13779F9D97 /* libPods-vostfree-vostfreeTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,30 +36,14 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = vostfree/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = vostfree/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = vostfree/main.m; sourceTree = "<group>"; };
-		1995E4DBA1FFEFDBA06A306A /* libPods-vostfree-vostfreeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vostfree-vostfreeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2852133F472A46EA96C90192 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
-		5178581880A647C6A2C20C7E /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
-		51DF6F07056845E1B9D439A7 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
-		58E7D078754A40E2A05A88B5 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
-		5C33C9C72E4F46EC92FF72B7 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
-		62C5019C332E48B9B7763D04 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
-		67B63A66B4864EE19E17AB4E /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
-		7A93142283410FF3D12E7092 /* libPods-vostfree.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vostfree.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1762645A09DC1CB9D5EFCC9D /* libPods-vostfree.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vostfree.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		289FF53311C0F06329FEE035 /* Pods-vostfree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vostfree.debug.xcconfig"; path = "Target Support Files/Pods-vostfree/Pods-vostfree.debug.xcconfig"; sourceTree = "<group>"; };
+		3EB26C08ED4A93CB346363D6 /* Pods-vostfree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vostfree.release.xcconfig"; path = "Target Support Files/Pods-vostfree/Pods-vostfree.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = vostfree/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8490519748DBB1D3666F6459 /* Pods-vostfree-vostfreeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vostfree-vostfreeTests.debug.xcconfig"; path = "Target Support Files/Pods-vostfree-vostfreeTests/Pods-vostfree-vostfreeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8FB7AC5E24F548FF96FD4CB0 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
-		BC6034342E6B41B89A144C0A /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
-		BD5AEF8A634F459EB9B67DD8 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
-		C12F4C7FD1D44F41BD5C6577 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
-		CE74573EE858404C8526B8D0 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
-		D21D294CE414497C93890131 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
-		D8F93DD372A46F5766118054 /* Pods-vostfree-vostfreeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vostfree-vostfreeTests.release.xcconfig"; path = "Target Support Files/Pods-vostfree-vostfreeTests/Pods-vostfree-vostfreeTests.release.xcconfig"; sourceTree = "<group>"; };
-		D980E628D0FB8557CACB134C /* Pods-vostfree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vostfree.debug.xcconfig"; path = "Target Support Files/Pods-vostfree/Pods-vostfree.debug.xcconfig"; sourceTree = "<group>"; };
+		C13902837ACDE0DE52547E46 /* Pods-vostfree-vostfreeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vostfree-vostfreeTests.release.xcconfig"; path = "Target Support Files/Pods-vostfree-vostfreeTests/Pods-vostfree-vostfreeTests.release.xcconfig"; sourceTree = "<group>"; };
+		E4DEB5DD28C90A13779F9D97 /* libPods-vostfree-vostfreeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vostfree-vostfreeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F3E21B6AE2694472ACC064C9 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
-		F5BBB700E744410F90B32248 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
-		FA450AF8E17F480BAE4BD08B /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
-		FCA421FF443155A0986F991E /* Pods-vostfree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vostfree.release.xcconfig"; path = "Target Support Files/Pods-vostfree/Pods-vostfree.release.xcconfig"; sourceTree = "<group>"; };
+		F86794B03178074E32CEF4C3 /* Pods-vostfree-vostfreeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vostfree-vostfreeTests.debug.xcconfig"; path = "Target Support Files/Pods-vostfree-vostfreeTests/Pods-vostfree-vostfreeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30534EEC8EA5E74C179B642A /* libPods-vostfree-vostfreeTests.a in Frameworks */,
+				E174D05F8454C8071991231E /* libPods-vostfree-vostfreeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76B2AEF74E06EEB64C3107DC /* libPods-vostfree.a in Frameworks */,
+				8A02317A1735D8987C072642 /* libPods-vostfree.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				7A93142283410FF3D12E7092 /* libPods-vostfree.a */,
-				1995E4DBA1FFEFDBA06A306A /* libPods-vostfree-vostfreeTests.a */,
+				1762645A09DC1CB9D5EFCC9D /* libPods-vostfree.a */,
+				E4DEB5DD28C90A13779F9D97 /* libPods-vostfree-vostfreeTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,8 +121,7 @@
 				00E356EF1AD99517003FC87E /* vostfreeTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				A2D281FCFE7393D848222F5D /* Pods */,
-				ACF4E5721B1B4270A80C1A20 /* Resources */,
+				E81B4B989B5BAF895E8FDCF4 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -154,38 +137,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A2D281FCFE7393D848222F5D /* Pods */ = {
+		E81B4B989B5BAF895E8FDCF4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D980E628D0FB8557CACB134C /* Pods-vostfree.debug.xcconfig */,
-				FCA421FF443155A0986F991E /* Pods-vostfree.release.xcconfig */,
-				8490519748DBB1D3666F6459 /* Pods-vostfree-vostfreeTests.debug.xcconfig */,
-				D8F93DD372A46F5766118054 /* Pods-vostfree-vostfreeTests.release.xcconfig */,
+				289FF53311C0F06329FEE035 /* Pods-vostfree.debug.xcconfig */,
+				3EB26C08ED4A93CB346363D6 /* Pods-vostfree.release.xcconfig */,
+				F86794B03178074E32CEF4C3 /* Pods-vostfree-vostfreeTests.debug.xcconfig */,
+				C13902837ACDE0DE52547E46 /* Pods-vostfree-vostfreeTests.release.xcconfig */,
 			);
+			name = Pods;
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		ACF4E5721B1B4270A80C1A20 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				5178581880A647C6A2C20C7E /* AntDesign.ttf */,
-				58E7D078754A40E2A05A88B5 /* Entypo.ttf */,
-				BC6034342E6B41B89A144C0A /* EvilIcons.ttf */,
-				CE74573EE858404C8526B8D0 /* Feather.ttf */,
-				62C5019C332E48B9B7763D04 /* FontAwesome.ttf */,
-				BD5AEF8A634F459EB9B67DD8 /* FontAwesome5_Brands.ttf */,
-				51DF6F07056845E1B9D439A7 /* FontAwesome5_Regular.ttf */,
-				F3E21B6AE2694472ACC064C9 /* FontAwesome5_Solid.ttf */,
-				D21D294CE414497C93890131 /* Fontisto.ttf */,
-				FA450AF8E17F480BAE4BD08B /* Foundation.ttf */,
-				F5BBB700E744410F90B32248 /* Ionicons.ttf */,
-				8FB7AC5E24F548FF96FD4CB0 /* MaterialCommunityIcons.ttf */,
-				C12F4C7FD1D44F41BD5C6577 /* MaterialIcons.ttf */,
-				67B63A66B4864EE19E17AB4E /* Octicons.ttf */,
-				2852133F472A46EA96C90192 /* SimpleLineIcons.ttf */,
-				5C33C9C72E4F46EC92FF72B7 /* Zocial.ttf */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,12 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "vostfreeTests" */;
 			buildPhases = (
-				BD20F03EEB2135030E4AB1CB /* [CP] Check Pods Manifest.lock */,
+				CD88A846354CA53859F2A565 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				F17F6D4975529256F6766A36 /* [CP] Embed Pods Frameworks */,
-				E88F3C7A5DA5D7569FB6C369 /* [CP] Copy Pods Resources */,
+				FCBC734441CF636A1AD024A5 /* [CP] Embed Pods Frameworks */,
+				6643AEFDAE52E43FC30667A8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,14 +177,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "vostfree" */;
 			buildPhases = (
-				CE0F627EE578687E4DA78EA7 /* [CP] Check Pods Manifest.lock */,
+				0B9DAD87C481A99A655852A9 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				B4097AD1EBC92516551B6138 /* [CP] Embed Pods Frameworks */,
-				F4D22062CFD892F4F95F2F69 /* [CP] Copy Pods Resources */,
+				E15AE1016C32A23AF56F7B54 /* [CP] Embed Pods Frameworks */,
+				AC1A6DD37A84907889223310 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -304,46 +265,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		B4097AD1EBC92516551B6138 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vostfree/Pods-vostfree-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vostfree/Pods-vostfree-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vostfree/Pods-vostfree-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BD20F03EEB2135030E4AB1CB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-vostfree-vostfreeTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CE0F627EE578687E4DA78EA7 /* [CP] Check Pods Manifest.lock */ = {
+		0B9DAD87C481A99A655852A9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -365,7 +287,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E88F3C7A5DA5D7569FB6C369 /* [CP] Copy Pods Resources */ = {
+		6643AEFDAE52E43FC30667A8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -382,24 +304,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vostfree-vostfreeTests/Pods-vostfree-vostfreeTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F17F6D4975529256F6766A36 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vostfree-vostfreeTests/Pods-vostfree-vostfreeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vostfree-vostfreeTests/Pods-vostfree-vostfreeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vostfree-vostfreeTests/Pods-vostfree-vostfreeTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F4D22062CFD892F4F95F2F69 /* [CP] Copy Pods Resources */ = {
+		AC1A6DD37A84907889223310 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -414,6 +319,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vostfree/Pods-vostfree-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD88A846354CA53859F2A565 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-vostfree-vostfreeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E15AE1016C32A23AF56F7B54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vostfree/Pods-vostfree-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vostfree/Pods-vostfree-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vostfree/Pods-vostfree-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCBC734441CF636A1AD024A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vostfree-vostfreeTests/Pods-vostfree-vostfreeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vostfree-vostfreeTests/Pods-vostfree-vostfreeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vostfree-vostfreeTests/Pods-vostfree-vostfreeTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -468,7 +429,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8490519748DBB1D3666F6459 /* Pods-vostfree-vostfreeTests.debug.xcconfig */;
+			baseConfigurationReference = F86794B03178074E32CEF4C3 /* Pods-vostfree-vostfreeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -495,7 +456,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8F93DD372A46F5766118054 /* Pods-vostfree-vostfreeTests.release.xcconfig */;
+			baseConfigurationReference = C13902837ACDE0DE52547E46 /* Pods-vostfree-vostfreeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -519,12 +480,11 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D980E628D0FB8557CACB134C /* Pods-vostfree.debug.xcconfig */;
+			baseConfigurationReference = 289FF53311C0F06329FEE035 /* Pods-vostfree.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H7R562BHQN;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = vostfree/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -546,12 +506,11 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCA421FF443155A0986F991E /* Pods-vostfree.release.xcconfig */;
+			baseConfigurationReference = 3EB26C08ED4A93CB346363D6 /* Pods-vostfree.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H7R562BHQN;
 				INFOPLIST_FILE = vostfree/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
