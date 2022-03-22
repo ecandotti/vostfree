@@ -32,6 +32,7 @@ We can :
 -   Search specific details thanks to search bar 🔍
 -   Navigate on app 🚗
 -   Have watchlist available in offline mode ♥️
+-   Custom SplashScreen
 -   Connect with loggin and access to private screen 🔒
 
 To Do :
@@ -43,11 +44,11 @@ To Do :
 -   [_] Read video
 -   [_] Rate video
 -   [_] Add Sentry
--   [x] Set custom splash screen ios
--   [_] Share button
+-   [x] Set custom splash screen ios/android
+-   [x] Share button
 -   [x] Search function
 -   [x] Add/Remove/Read/Store Watchlist
--   [_] Store Watchlist in cache
--   [_] Store Watchlist video in cache
+-   [x] Store Watchlist in cache
+-   [_] Download video in cache
 -   [_] Add Ads
 -   [x] Design

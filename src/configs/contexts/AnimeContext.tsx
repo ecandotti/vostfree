@@ -26,7 +26,6 @@ export const AnimeContextProvider: React.FC = ({ children }) => {
     }, [watchlist])
 
     const addOrRemoveToWatchlist = (item: any) => {
-        console.log('oko')
         const alreadyWatchlisted = watchlist.findIndex((el: any) => el.id === item.id)
 
         if (alreadyWatchlisted !== -1) {

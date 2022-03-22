@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import SplashScreen from 'react-native-splash-screen'
 
 import { AuthContextProvider } from '@configs/contexts/AuthContext'
+import { AnimeContextProvider } from '@configs/contexts/AnimeContext'
 import StackNavigator from '@configs/routes'
 
 const App: React.FC = () => {
@@ -11,7 +12,9 @@ const App: React.FC = () => {
 
     return (
         <AuthContextProvider>
-            <StackNavigator />
+            <AnimeContextProvider>
+                <StackNavigator />
+            </AnimeContextProvider>
         </AuthContextProvider>
     )
 }

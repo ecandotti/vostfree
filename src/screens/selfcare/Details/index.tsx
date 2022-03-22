@@ -72,7 +72,7 @@ const Index: React.FC<ScreenTypes> = ({ route }) => {
                                     alignItems: 'center',
                                     marginHorizontal: 10,
                                 }}>
-                                {alreadyWatchlisted.length < 0 ? (
+                                {alreadyWatchlisted.length > 0 ? (
                                     <IonIcons name="heart" color="#4ded77" size={23} />
                                 ) : (
                                     <IonIcons name="heart-outline" color="#4ded77" size={23} />
