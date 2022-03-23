@@ -7,6 +7,7 @@
         "isolatedModules": true,
         "jsx": "react-native",
         "types": ["node"],
+        "typeRoots": ["./src/types"],
         "lib": ["DOM", "ESNext"],
         "moduleResolution": "node",
         "noEmit": true,

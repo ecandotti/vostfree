@@ -26,7 +26,6 @@ export const AuthContextProvider: React.FC = ({ children }) => {
     }, [])
 
     const login = async (user: UserLogin) => {
-        console.log(CONNECT_URI)
         const query = await axios.post(CONNECT_URI, {
             username: user.username,
             password: user.password,
