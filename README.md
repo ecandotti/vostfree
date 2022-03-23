@@ -29,11 +29,12 @@ yarn start
 
 We can :
 
--   Search specific details thanks to search bar 🔍
 -   Navigate on app 🚗
 -   Have watchlist available in offline mode ♥️
 -   Custom SplashScreen
 -   Connect with loggin and access to private screen 🔒
+-   Like or Dislike a video
+-   Download video in cache
 
 To Do :
 
@@ -41,14 +42,14 @@ To Do :
 -   [x] Add Typescript
 -   [x] Navigation
 -   [x] Private access (login)
--   [_] Read video
--   [_] Rate video
+-   [x] Read video
+-   [_] Fullscreen video when onPress
+-   [x] Rate video
 -   [_] Add Sentry
 -   [x] Set custom splash screen ios/android
 -   [x] Share button
--   [x] Search function
 -   [x] Add/Remove/Read/Store Watchlist
 -   [x] Store Watchlist in cache
--   [_] Download video in cache
+-   [x] Download video in cache
 -   [_] Add Ads
 -   [x] Design

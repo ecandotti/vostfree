@@ -5,7 +5,7 @@ IonIcons.loadFont()
 
 import Catalog from '@screens/selfcare/Catalog'
 import Watchlist from '@screens/selfcare/Watchlist'
-import Search from '@screens/selfcare/Search'
+import Downloaded from '@screens/selfcare/Downloaded'
 import Account from '@screens/selfcare/Account'
 
 const Tab = createBottomTabNavigator()
@@ -44,11 +44,11 @@ const SelfcareStack: React.FC = () => {
                 }}
             />
             <Tab.Screen
-                name="Rechercher"
-                component={Search}
+                name="Télécharger"
+                component={Downloaded}
                 options={{
                     tabBarIcon: ({ color, size }) => (
-                        <IonIcons name="search-outline" color={color} size={size} />
+                        <IonIcons name="download-outline" color={color} size={size} />
                     ),
                 }}
             />

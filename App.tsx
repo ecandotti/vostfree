@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import SplashScreen from 'react-native-splash-screen'
+import FlashMessage from 'react-native-flash-message'
 
 import { AuthContextProvider } from '@configs/contexts/AuthContext'
 import { AnimeContextProvider } from '@configs/contexts/AnimeContext'
@@ -14,6 +15,7 @@ const App: React.FC = () => {
         <AuthContextProvider>
             <AnimeContextProvider>
                 <StackNavigator />
+                <FlashMessage position="top" />
             </AnimeContextProvider>
         </AuthContextProvider>
     )

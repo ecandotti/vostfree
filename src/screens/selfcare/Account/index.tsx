@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 
-import AuthContext from 'configs/contexts/AuthContext'
+import AuthContext from '@configs/contexts/AuthContext'
 
-import { ScreenTypes } from 'types/ScreenTypes'
+import { ScreenTypes } from '@customTypes/ScreenTypes'
 
 import { Button, Container } from '@components/styled-components'
 
@@ -14,7 +14,7 @@ const Index: React.FC<ScreenTypes> = () => {
             <Button
                 title="Deconnexion"
                 onPress={() => logout()}
-                icon="leaf-outline"
+                icon="lock-open-outline"
                 style={{ color: 'white' }}
             />
         </Container>

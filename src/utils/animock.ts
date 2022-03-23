@@ -1,4 +1,4 @@
-export const AniMock = [
+export let AniMock = [
     {
         id: '001',
         title: 'One Piece',
@@ -40,7 +40,7 @@ export const AniMock = [
                     {
                         number: 1,
                         id: 'qqq',
-                        path: '',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
                         title: 'Naruto Uzumaki',
                         thumbnail: {
                             path: 'https://fr.web.img3.acsta.net/r_654_368/newsv7/21/02/24/09/05/3123179',
@@ -50,7 +50,7 @@ export const AniMock = [
                     {
                         number: 2,
                         id: 'sss',
-                        path: '',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
                         title: 'Rasengan !',
                         thumbnail: {
                             path: 'https://cdn.shopify.com/s/files/1/0046/2779/1960/articles/rasengan_naruto_shippuden_640x',
@@ -60,7 +60,7 @@ export const AniMock = [
                     {
                         number: 3,
                         id: 'ddddd',
-                        path: '',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
                         title: 'Kyubi',
                         thumbnail: {
                             path: 'https://pm1.narvii.com/6954/b8c128c4202170d37b7485a042162f72bc8d7e00r1-1891-1080v2_hq',
@@ -70,7 +70,7 @@ export const AniMock = [
                     {
                         number: 4,
                         id: 'ffff',
-                        path: '',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
                         title: 'Naruto vs Sasuke',
                         thumbnail: {
                             path: 'https://animehighlight.news/images/large/2021-naruto-vs-sasuke-comparaison-des-pouvoirs-jusqua-la-serie-boruto-1618584614',

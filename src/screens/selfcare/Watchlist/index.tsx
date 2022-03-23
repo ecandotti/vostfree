@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { FlatList } from 'react-native'
+import { FlatList, Text } from 'react-native'
 
 import AnimeContext from '@configs/contexts/AnimeContext'
 
@@ -13,14 +13,20 @@ const Index: React.FC<ScreenTypes> = () => {
 
     return (
         <Container>
-            <FlatList
-                data={watchlist}
-                renderItem={({ item }: any) => <Card item={item} />}
-                style={{ marginTop: 10 }}
-                keyExtractor={(item: any) => item.id}
-                showsHorizontalScrollIndicator={false}
-                horizontal
-            />
+            {watchlist.length > 0 ? (
+                <FlatList
+                    data={watchlist}
+                    renderItem={({ item }: any) => <Card item={item} />}
+                    style={{ marginTop: 10 }}
+                    keyExtractor={(item: any) => item.id}
+                    showsHorizontalScrollIndicator={false}
+                    horizontal
+                />
+            ) : (
+                <Text style={{ color: 'white', textAlign: 'center', marginVertical: 20 }}>
+                    Vous n'avez rien watchlister
+                </Text>
+            )}
         </Container>
     )
 }

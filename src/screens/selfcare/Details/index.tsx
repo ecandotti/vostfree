@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
-import { Text, Image, View, TouchableOpacity, FlatList, Share } from 'react-native'
+import { Text, Image, View, TouchableOpacity, FlatList, Share, StyleSheet } from 'react-native'
+import Video from 'react-native-video'
 import IonIcons from 'react-native-vector-icons/Ionicons'
 
 import { ScreenTypes } from '@customTypes/ScreenTypes'
@@ -12,9 +13,10 @@ import VideoCard from '@components/VideoCard'
 const Index: React.FC<ScreenTypes> = ({ route }) => {
     const { title, author, description, like, dislike, thumbnail, videos, id } = route.params.anime
 
-    const { watchlist, addOrRemoveToWatchlist } = useContext(AnimeContext)
+    const { watchlist, addOrRemoveToWatchlist, makeLike, makeDislike } = useContext(AnimeContext)
 
     const [seeMore, setSeeMore] = useState(false)
+    const [isPaused, setIsPaused] = useState(true)
 
     const onShare = async () => {
         try {
@@ -39,12 +41,16 @@ const Index: React.FC<ScreenTypes> = ({ route }) => {
                 <Container>
                     <TitleText title={title} />
                     <View style={{ marginTop: 10, display: 'flex', flexDirection: 'column' }}>
-                        <Text style={{ color: 'white' }}>
-                            {like} <IonIcons name="thumbs-up-outline" />
-                        </Text>
-                        <Text style={{ color: 'white' }}>
-                            {dislike} <IonIcons name="thumbs-down-outline" />
-                        </Text>
+                        <TouchableOpacity onPress={() => makeLike(route.params.anime)}>
+                            <Text style={{ color: 'white' }}>
+                                {like} <IonIcons name="thumbs-up-outline" />
+                            </Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={() => makeDislike(route.params.anime)}>
+                            <Text style={{ color: 'white' }}>
+                                {dislike} <IonIcons name="thumbs-down-outline" />
+                            </Text>
+                        </TouchableOpacity>
                         <View
                             style={{
                                 display: 'flex',
@@ -117,8 +123,27 @@ const Index: React.FC<ScreenTypes> = ({ route }) => {
                     }
                 />
             </Container>
+            <Video
+                source={{ uri: 'https://www.w3schools.com/html/mov_bbb.mp4' }}
+                resizeMode="cover"
+                controls
+                fullscreen
+                paused={isPaused}
+                style={styles.backgroundVideo}
+            />
         </>
     )
 }
+
+const styles = StyleSheet.create({
+    backgroundVideo: {
+        display: 'none',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        bottom: 0,
+        right: 0,
+    },
+})
 
 export default Index

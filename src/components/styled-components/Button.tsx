@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import IonIcons from 'react-native-vector-icons/Ionicons'
 
-import { ButtonTypes } from 'types/styled-components/ButtonTypes'
+import { ButtonTypes } from '@customTypes/styled-components/ButtonTypes'
 
 export const Button: React.FC<ButtonTypes> = ({ title, onPress, icon, style }) => (
     <ButtonContainer onPress={onPress} style={style}>
