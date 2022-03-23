@@ -22,7 +22,7 @@ export const TextInput: React.FC<TextInputTypes> = ({
             value={value}
             onChangeText={onChangeText}
             color={color}
-            style={style}
+            cstyle={style}
             secureTextEntry={secureTextEntry}
         />
     </View>
@@ -48,6 +48,6 @@ const IconContainer = styled.View`
 const TextInputContainer = styled.TextInput`
     flex: 1;
     border-radius: 5px;
-    background-color: ${({ style }: any) => (style?.bgColor ? style.bgColor : 'white')};
+    background-color: ${({ cstyle }: any) => (cstyle?.bgColor ? cstyle.bgColor : 'white')};
     color: black;
 `
