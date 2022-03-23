@@ -45,7 +45,6 @@ To Do :
 -   [x] Read video
 -   [_] Fullscreen video when onPress
 -   [x] Rate video
--   [_] Add Sentry
 -   [x] Set custom splash screen ios/android
 -   [x] Share button
 -   [x] Add/Remove/Read/Store Watchlist

@@ -1,13 +1,12 @@
-import { View, Text, FlatList } from 'react-native'
-import React, { useContext, useState, useEffect } from 'react'
-import RNFS from 'react-native-fs'
+import { View, Text, FlatList, StyleSheet } from 'react-native'
+import React, { useContext } from 'react'
+import Video from 'react-native-video'
 
 import AnimeContext from '@configs/contexts/AnimeContext'
 
 import { Container, Button } from '@components/styled-components'
 
 import { ScreenTypes } from '@customTypes/ScreenTypes'
-import { useFocusEffect } from '@react-navigation/native'
 
 const Index: React.FC<ScreenTypes> = ({ navigation }) => {
     const { downloadedList, deleteNow } = useContext(AnimeContext)
@@ -36,15 +35,36 @@ const Index: React.FC<ScreenTypes> = ({ navigation }) => {
                 <FlatList
                     data={downloadedList}
                     renderItem={({ item }) => renderCard(item)}
-                    keyExtractor={(item: any) => item.title}
+                    keyExtractor={(item: any) => item.id}
                 />
             ) : (
                 <Text style={{ color: 'white', textAlign: 'center', marginVertical: 20 }}>
                     Vous n'avez rien téléchargé
                 </Text>
             )}
+            <View>
+                <Video
+                    source={{ uri: 'https://www.w3schools.com/html/mov_bbb.mp4' }}
+                    resizeMode="cover"
+                    controls
+                    muted
+                    paused
+                    fullscreen
+                    style={styles.backgroundVideo}
+                />
+            </View>
         </Container>
     )
 }
+
+const styles = StyleSheet.create({
+    backgroundVideo: {
+        position: 'absolute',
+        top: 50,
+        left: 50,
+        bottom: 50,
+        right: 50,
+    },
+})
 
 export default Index

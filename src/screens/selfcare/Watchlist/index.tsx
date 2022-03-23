@@ -18,9 +18,9 @@ const Index: React.FC<ScreenTypes> = () => {
                     data={watchlist}
                     renderItem={({ item }: any) => <Card item={item} />}
                     style={{ marginTop: 10 }}
+                    numColumns={2}
                     keyExtractor={(item: any) => item.id}
-                    showsHorizontalScrollIndicator={false}
-                    horizontal
+                    showsVerticalScrollIndicator={false}
                 />
             ) : (
                 <Text style={{ color: 'white', textAlign: 'center', marginVertical: 20 }}>

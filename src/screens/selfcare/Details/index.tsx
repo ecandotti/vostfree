@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { Text, Image, View, TouchableOpacity, FlatList, Share, StyleSheet } from 'react-native'
-import Video from 'react-native-video'
+import { Text, Image, View, TouchableOpacity, FlatList, Share } from 'react-native'
 import IonIcons from 'react-native-vector-icons/Ionicons'
 
 import { ScreenTypes } from '@customTypes/ScreenTypes'
@@ -123,27 +122,8 @@ const Index: React.FC<ScreenTypes> = ({ route }) => {
                     }
                 />
             </Container>
-            <Video
-                source={{ uri: 'https://www.w3schools.com/html/mov_bbb.mp4' }}
-                resizeMode="cover"
-                controls
-                fullscreen
-                paused={isPaused}
-                style={styles.backgroundVideo}
-            />
         </>
     )
 }
-
-const styles = StyleSheet.create({
-    backgroundVideo: {
-        display: 'none',
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        bottom: 0,
-        right: 0,
-    },
-})
 
 export default Index

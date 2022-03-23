@@ -69,7 +69,7 @@ export const AnimeContextProvider: React.FC = ({ children }) => {
             await RNFS.downloadFile(videoOptions)
 
             const newList = await RNFS.readDir(RNFS.DocumentDirectoryPath)
-            await setDownloadedList(newList)
+            setDownloadedList(newList)
 
             showMessage({
                 message: 'Téléchargement réussi !',
