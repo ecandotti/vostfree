@@ -1,6 +1,5 @@
 import React from 'react'
 import { View } from 'react-native'
-import RNFS from 'react-native-fs'
 import VideoPlayer from 'react-native-video-player'
 
 import { ScreenTypes } from '@customTypes/ScreenTypes'
