@@ -44,13 +44,13 @@ const Index: React.FC<ScreenTypes> = ({ route }) => {
                     <TitleText title={title} />
                     <View style={{ marginTop: 10, display: 'flex', flexDirection: 'column' }}>
                         <TouchableOpacity onPress={() => makeLike(route.params.anime)}>
-                            <Text style={{ color: 'white' }}>
-                                {like} <IonIcons name="thumbs-up-outline" />
+                            <Text style={{ color: 'white', fontSize: 20 }}>
+                                {like} <IonIcons name="thumbs-up-outline" size={20} />
                             </Text>
                         </TouchableOpacity>
                         <TouchableOpacity onPress={() => makeDislike(route.params.anime)}>
-                            <Text style={{ color: 'white' }}>
-                                {dislike} <IonIcons name="thumbs-down-outline" />
+                            <Text style={{ color: 'white', fontSize: 20 }}>
+                                {dislike} <IonIcons name="thumbs-down-outline" size={20} />
                             </Text>
                         </TouchableOpacity>
                         <View

@@ -14,10 +14,46 @@ export let AniMock = [
         videos: {
             saisons: [
                 [
-                    { id: 'aaaa', path: '', title: '', thumbnail: { path: '', extension: '' } },
-                    { id: 'iii', path: '', title: '', thumbnail: { path: '', extension: '' } },
-                    { id: 'uytgfcxs', path: '', title: '', thumbnail: { path: '', extension: '' } },
-                    { id: 'wqswq', path: '', title: '', thumbnail: { path: '', extension: '' } },
+                    {
+                        number: 1,
+                        id: 'qqq',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
+                        title: 'NarutoUzumaki',
+                        thumbnail: {
+                            path: 'https://fr.web.img3.acsta.net/r_654_368/newsv7/21/02/24/09/05/3123179',
+                            extension: '.jpg',
+                        },
+                    },
+                    {
+                        number: 2,
+                        id: 'sss',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
+                        title: 'Rasengan',
+                        thumbnail: {
+                            path: 'https://cdn.shopify.com/s/files/1/0046/2779/1960/articles/rasengan_naruto_shippuden_640x',
+                            extension: '.jpg',
+                        },
+                    },
+                    {
+                        number: 3,
+                        id: 'ddddd',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
+                        title: 'Kyubi',
+                        thumbnail: {
+                            path: 'https://pm1.narvii.com/6954/b8c128c4202170d37b7485a042162f72bc8d7e00r1-1891-1080v2_hq',
+                            extension: '.jpg',
+                        },
+                    },
+                    {
+                        number: 4,
+                        id: 'ffff',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
+                        title: 'NarutoVsSasuke',
+                        thumbnail: {
+                            path: 'https://animehighlight.news/images/large/2021-naruto-vs-sasuke-comparaison-des-pouvoirs-jusqua-la-serie-boruto-1618584614',
+                            extension: '.jpeg',
+                        },
+                    },
                 ],
             ],
         },
@@ -96,10 +132,46 @@ export let AniMock = [
         videos: {
             saisons: [
                 [
-                    { id: 'gfsfwx', path: '', title: '', thumbnail: { path: '', extension: '' } },
-                    { id: 'hju', path: '', title: '', thumbnail: { path: '', extension: '' } },
-                    { id: 'uyt', path: '', title: '', thumbnail: { path: '', extension: '' } },
-                    { id: 'vfr', path: '', title: '', thumbnail: { path: '', extension: '' } },
+                    {
+                        number: 1,
+                        id: 'qqq',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
+                        title: 'NarutoUzumaki',
+                        thumbnail: {
+                            path: 'https://fr.web.img3.acsta.net/r_654_368/newsv7/21/02/24/09/05/3123179',
+                            extension: '.jpg',
+                        },
+                    },
+                    {
+                        number: 2,
+                        id: 'sss',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
+                        title: 'Rasengan',
+                        thumbnail: {
+                            path: 'https://cdn.shopify.com/s/files/1/0046/2779/1960/articles/rasengan_naruto_shippuden_640x',
+                            extension: '.jpg',
+                        },
+                    },
+                    {
+                        number: 3,
+                        id: 'ddddd',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
+                        title: 'Kyubi',
+                        thumbnail: {
+                            path: 'https://pm1.narvii.com/6954/b8c128c4202170d37b7485a042162f72bc8d7e00r1-1891-1080v2_hq',
+                            extension: '.jpg',
+                        },
+                    },
+                    {
+                        number: 4,
+                        id: 'ffff',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
+                        title: 'NarutoVsSasuke',
+                        thumbnail: {
+                            path: 'https://animehighlight.news/images/large/2021-naruto-vs-sasuke-comparaison-des-pouvoirs-jusqua-la-serie-boruto-1618584614',
+                            extension: '.jpeg',
+                        },
+                    },
                 ],
             ],
         },
@@ -119,10 +191,46 @@ export let AniMock = [
         videos: {
             saisons: [
                 [
-                    { id: 'rtynb', path: '', title: '', thumbnail: { path: '', extension: '' } },
-                    { id: 'gvrd', path: '', title: '', thumbnail: { path: '', extension: '' } },
-                    { id: 'uun', path: '', title: '', thumbnail: { path: '', extension: '' } },
-                    { id: 'trze', path: '', title: '', thumbnail: { path: '', extension: '' } },
+                    {
+                        number: 1,
+                        id: 'qqq',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
+                        title: 'NarutoUzumaki',
+                        thumbnail: {
+                            path: 'https://fr.web.img3.acsta.net/r_654_368/newsv7/21/02/24/09/05/3123179',
+                            extension: '.jpg',
+                        },
+                    },
+                    {
+                        number: 2,
+                        id: 'sss',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
+                        title: 'Rasengan',
+                        thumbnail: {
+                            path: 'https://cdn.shopify.com/s/files/1/0046/2779/1960/articles/rasengan_naruto_shippuden_640x',
+                            extension: '.jpg',
+                        },
+                    },
+                    {
+                        number: 3,
+                        id: 'ddddd',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
+                        title: 'Kyubi',
+                        thumbnail: {
+                            path: 'https://pm1.narvii.com/6954/b8c128c4202170d37b7485a042162f72bc8d7e00r1-1891-1080v2_hq',
+                            extension: '.jpg',
+                        },
+                    },
+                    {
+                        number: 4,
+                        id: 'ffff',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
+                        title: 'NarutoVsSasuke',
+                        thumbnail: {
+                            path: 'https://animehighlight.news/images/large/2021-naruto-vs-sasuke-comparaison-des-pouvoirs-jusqua-la-serie-boruto-1618584614',
+                            extension: '.jpeg',
+                        },
+                    },
                 ],
             ],
         },
@@ -142,10 +250,46 @@ export let AniMock = [
         videos: {
             saisons: [
                 [
-                    { id: 'zae', path: '', title: '', thumbnail: { path: '', extension: '' } },
-                    { id: 'fsdc', path: '', title: '', thumbnail: { path: '', extension: '' } },
-                    { id: 'csdbt', path: '', title: '', thumbnail: { path: '', extension: '' } },
-                    { id: 'byrty', path: '', title: '', thumbnail: { path: '', extension: '' } },
+                    {
+                        number: 1,
+                        id: 'qqq',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
+                        title: 'NarutoUzumaki',
+                        thumbnail: {
+                            path: 'https://fr.web.img3.acsta.net/r_654_368/newsv7/21/02/24/09/05/3123179',
+                            extension: '.jpg',
+                        },
+                    },
+                    {
+                        number: 2,
+                        id: 'sss',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
+                        title: 'Rasengan',
+                        thumbnail: {
+                            path: 'https://cdn.shopify.com/s/files/1/0046/2779/1960/articles/rasengan_naruto_shippuden_640x',
+                            extension: '.jpg',
+                        },
+                    },
+                    {
+                        number: 3,
+                        id: 'ddddd',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
+                        title: 'Kyubi',
+                        thumbnail: {
+                            path: 'https://pm1.narvii.com/6954/b8c128c4202170d37b7485a042162f72bc8d7e00r1-1891-1080v2_hq',
+                            extension: '.jpg',
+                        },
+                    },
+                    {
+                        number: 4,
+                        id: 'ffff',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
+                        title: 'NarutoVsSasuke',
+                        thumbnail: {
+                            path: 'https://animehighlight.news/images/large/2021-naruto-vs-sasuke-comparaison-des-pouvoirs-jusqua-la-serie-boruto-1618584614',
+                            extension: '.jpeg',
+                        },
+                    },
                 ],
             ],
         },
@@ -162,10 +306,46 @@ export let AniMock = [
         videos: {
             saisons: [
                 [
-                    { id: 'aze', path: '', title: '', thumbnail: { path: '', extension: '' } },
-                    { id: 'zer', path: '', title: '', thumbnail: { path: '', extension: '' } },
-                    { id: 'ert', path: '', title: '', thumbnail: { path: '', extension: '' } },
-                    { id: 'rty', path: '', title: '', thumbnail: { path: '', extension: '' } },
+                    {
+                        number: 1,
+                        id: 'qqq',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
+                        title: 'NarutoUzumaki',
+                        thumbnail: {
+                            path: 'https://fr.web.img3.acsta.net/r_654_368/newsv7/21/02/24/09/05/3123179',
+                            extension: '.jpg',
+                        },
+                    },
+                    {
+                        number: 2,
+                        id: 'sss',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
+                        title: 'Rasengan',
+                        thumbnail: {
+                            path: 'https://cdn.shopify.com/s/files/1/0046/2779/1960/articles/rasengan_naruto_shippuden_640x',
+                            extension: '.jpg',
+                        },
+                    },
+                    {
+                        number: 3,
+                        id: 'ddddd',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
+                        title: 'Kyubi',
+                        thumbnail: {
+                            path: 'https://pm1.narvii.com/6954/b8c128c4202170d37b7485a042162f72bc8d7e00r1-1891-1080v2_hq',
+                            extension: '.jpg',
+                        },
+                    },
+                    {
+                        number: 4,
+                        id: 'ffff',
+                        path: 'https://www.w3schools.com/html/mov_bbb.mp4',
+                        title: 'NarutoVsSasuke',
+                        thumbnail: {
+                            path: 'https://animehighlight.news/images/large/2021-naruto-vs-sasuke-comparaison-des-pouvoirs-jusqua-la-serie-boruto-1618584614',
+                            extension: '.jpeg',
+                        },
+                    },
                 ],
             ],
         },
