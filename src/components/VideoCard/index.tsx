@@ -1,18 +1,26 @@
 import React, { useContext } from 'react'
 import { View, Image, Text, TouchableOpacity } from 'react-native'
-// import Video from 'react-native-video'
 import IonIcons from 'react-native-vector-icons/Ionicons'
 
 import AnimeContext from '@configs/contexts/AnimeContext'
 
 import { TitleText } from '../styled-components'
+import { useNavigation } from '@react-navigation/native'
 
 const Index: React.FC<any> = ({ video }) => {
+    const navigation = useNavigation()
+
     const { downloadNow } = useContext(AnimeContext)
 
     return (
         <>
-            <TouchableOpacity style={{ display: 'flex', flexDirection: 'row', marginVertical: 5 }}>
+            <TouchableOpacity
+                style={{ display: 'flex', flexDirection: 'row', marginVertical: 5 }}
+                onPress={() =>
+                    navigation.navigate('WatchVideo', {
+                        videoUri: video.path,
+                    })
+                }>
                 <Image
                     source={{ uri: `${video.thumbnail?.path}${video.thumbnail?.extension}` }}
                     style={{ width: 90, height: 50 }}
