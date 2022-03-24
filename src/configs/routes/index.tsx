@@ -8,6 +8,7 @@ import SelfcareStack from './SelfcareStack'
 
 import Login from '@screens/guest/Login'
 import Details from '@screens/selfcare/Details'
+import WatchVideo from '@screens/selfcare/WatchVideo'
 
 import GoBack from '@components/GoBack'
 
@@ -29,6 +30,16 @@ const StackNavigator = () => {
                         <Stack.Screen
                             name="Details"
                             component={Details}
+                            options={({ navigation }) => ({
+                                animationTypeForReplace: 'push',
+                                headerStyle: { backgroundColor: '#34495e' },
+                                headerLeft: () => <GoBack onPress={() => navigation.goBack()} />,
+                                headerTitle: '',
+                            })}
+                        />
+                        <Stack.Screen
+                            name="WatchVideo"
+                            component={WatchVideo}
                             options={({ navigation }) => ({
                                 animationTypeForReplace: 'push',
                                 headerStyle: { backgroundColor: '#34495e' },

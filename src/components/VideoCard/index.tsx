@@ -62,7 +62,6 @@ const Index: React.FC<any> = ({ video }) => {
                     </View>
                 </View>
             </TouchableOpacity>
-            {/* <Video source={{ uri: video.path }} /> */}
         </>
     )
 }

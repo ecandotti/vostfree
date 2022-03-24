@@ -8,8 +8,11 @@ import AnimeContext from '@configs/contexts/AnimeContext'
 
 import { Container, TitleText } from '@components/styled-components'
 import VideoCard from '@components/VideoCard'
+import { useNavigation } from '@react-navigation/native'
 
 const Index: React.FC<ScreenTypes> = ({ route }) => {
+    const navigation = useNavigation()
+
     const { title, author, description, like, dislike, thumbnail, videos, id } = route.params.anime
 
     const { watchlist, addOrRemoveToWatchlist, makeLike, makeDislike } = useContext(AnimeContext)
@@ -58,6 +61,11 @@ const Index: React.FC<ScreenTypes> = ({ route }) => {
                                 marginTop: 80,
                             }}>
                             <TouchableOpacity
+                                onPress={() =>
+                                    navigation.navigate('WatchVideo', {
+                                        videoUri: videos.saisons[0][0].path,
+                                    })
+                                }
                                 style={{
                                     display: 'flex',
                                     flexDirection: 'column',

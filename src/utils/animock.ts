@@ -41,7 +41,7 @@ export let AniMock = [
                         number: 1,
                         id: 'qqq',
                         path: 'https://www.w3schools.com/html/mov_bbb.mp4',
-                        title: 'Naruto Uzumaki',
+                        title: 'NarutoUzumaki',
                         thumbnail: {
                             path: 'https://fr.web.img3.acsta.net/r_654_368/newsv7/21/02/24/09/05/3123179',
                             extension: '.jpg',
@@ -51,7 +51,7 @@ export let AniMock = [
                         number: 2,
                         id: 'sss',
                         path: 'https://www.w3schools.com/html/mov_bbb.mp4',
-                        title: 'Rasengan !',
+                        title: 'Rasengan',
                         thumbnail: {
                             path: 'https://cdn.shopify.com/s/files/1/0046/2779/1960/articles/rasengan_naruto_shippuden_640x',
                             extension: '.jpg',
@@ -71,7 +71,7 @@ export let AniMock = [
                         number: 4,
                         id: 'ffff',
                         path: 'https://www.w3schools.com/html/mov_bbb.mp4',
-                        title: 'Naruto vs Sasuke',
+                        title: 'NarutoVsSasuke',
                         thumbnail: {
                             path: 'https://animehighlight.news/images/large/2021-naruto-vs-sasuke-comparaison-des-pouvoirs-jusqua-la-serie-boruto-1618584614',
                             extension: '.jpeg',

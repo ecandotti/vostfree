@@ -43,7 +43,7 @@ To Do :
 -   [x] Navigation
 -   [x] Private access (login)
 -   [x] Read video
--   [_] Fullscreen video when onPress
+-   [x] Read video onPress
 -   [x] Rate video
 -   [x] Set custom splash screen ios/android
 -   [x] Share button
