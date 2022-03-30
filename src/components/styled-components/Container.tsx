@@ -1,8 +1,8 @@
-import React from "react"
-import { SafeAreaView } from "react-native"
-import styled from "styled-components"
+import React from 'react'
+import { SafeAreaView } from 'react-native'
+import styled from 'styled-components'
 
-export const Container = ({ children }) => (
+export const Container: React.FC = ({ children }) => (
     <SafeAreaView>
         <ViewContainer>{children}</ViewContainer>
     </SafeAreaView>

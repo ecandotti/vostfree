@@ -1,17 +1,17 @@
 import React, { useContext } from 'react'
-import { Dimensions, FlatList, Text, View } from 'react-native'
+import { Dimensions, FlatList, View } from 'react-native'
 
 import AnimeContext from '@configs/contexts/AnimeContext'
 
 import { ScreenTypes } from '@customTypes/ScreenTypes'
 
-import { Container } from '@components/styled-components'
+import { Container, Margin, PText } from '@components/styled-components'
 import Card from '@components/Card'
 
 const Index: React.FC<ScreenTypes> = () => {
     const { watchlist } = useContext(AnimeContext)
 
-    const { width, height } = Dimensions.get('window')
+    const { width } = Dimensions.get('window')
 
     return (
         <Container>
@@ -29,9 +29,9 @@ const Index: React.FC<ScreenTypes> = () => {
                     showsVerticalScrollIndicator={false}
                 />
             ) : (
-                <Text style={{ color: 'white', textAlign: 'center', marginVertical: 20 }}>
-                    Vous n'avez rien watchlister
-                </Text>
+                <Margin mt={20} mb={20}>
+                    <PText>Vous n'avez rien watchlister</PText>
+                </Margin>
             )}
         </Container>
     )

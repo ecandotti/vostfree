@@ -1,14 +1,16 @@
 import React, { useContext, useState } from 'react'
-import { Text, Image, View, TouchableOpacity, FlatList, Share } from 'react-native'
+import { Text as TextRN } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
+import { Image, View, TouchableOpacity, FlatList, Share } from 'react-native'
 import IonIcons from 'react-native-vector-icons/Ionicons'
 
 import { ScreenTypes } from '@customTypes/ScreenTypes'
 
 import AnimeContext from '@configs/contexts/AnimeContext'
 
-import { Container, TitleText } from '@components/styled-components'
+import { Container, FlexCol, FlexRow, Margin, TitleText, Text } from '@components/styled-components'
 import VideoCard from '@components/VideoCard'
-import { useNavigation } from '@react-navigation/native'
+import CTACustom from '@components/CTACustom'
 
 const Index: React.FC<ScreenTypes> = ({ route }) => {
     const navigation = useNavigation()
@@ -22,7 +24,7 @@ const Index: React.FC<ScreenTypes> = ({ route }) => {
 
     const onShare = async () => {
         try {
-            const result = await Share.share({
+            await Share.share({
                 title: 'Vostfree',
                 message: `Partagez la fiche descriptive de ${title} à vos amis 😀`,
             })
@@ -35,96 +37,82 @@ const Index: React.FC<ScreenTypes> = ({ route }) => {
 
     return (
         <>
-            <View style={{ display: 'flex', flexDirection: 'row' }}>
+            <FlexRow>
                 <Image
                     source={{ uri: `${thumbnail?.path}${thumbnail?.extension}` }}
                     style={{ width: 130, height: 200 }}
                 />
                 <Container>
                     <TitleText title={title} />
-                    <View style={{ marginTop: 10, display: 'flex', flexDirection: 'column' }}>
+                    <Margin mt={10} />
+                    <FlexCol>
                         <TouchableOpacity onPress={() => makeLike(route.params.anime)}>
-                            <Text style={{ color: 'white', fontSize: 20 }}>
+                            <Text size={20}>
                                 {like} <IonIcons name="thumbs-up-outline" size={20} />
                             </Text>
                         </TouchableOpacity>
                         <TouchableOpacity onPress={() => makeDislike(route.params.anime)}>
-                            <Text style={{ color: 'white', fontSize: 20 }}>
+                            <Text size={20}>
                                 {dislike} <IonIcons name="thumbs-down-outline" size={20} />
                             </Text>
                         </TouchableOpacity>
-                        <View
-                            style={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                                justifyContent: 'space-between',
-                                marginTop: 80,
-                            }}>
-                            <TouchableOpacity
+                        <Margin mt={80} />
+                        <FlexRow xPosition="space-between">
+                            <CTACustom
                                 onPress={() =>
                                     navigation.navigate('WatchVideo', {
                                         videoUri: videos.saisons[0][0].path,
                                     })
                                 }
-                                style={{
-                                    display: 'flex',
-                                    flexDirection: 'column',
-                                    justifyContent: 'center',
-                                    alignItems: 'center',
-                                    marginHorizontal: 10,
-                                }}>
-                                <IonIcons name="play-circle-outline" color="#4ded77" size={23} />
-                                <Text style={{ color: '#4ded77', fontSize: 12 }}>Episode 1</Text>
-                            </TouchableOpacity>
-                            <TouchableOpacity
-                                onPress={() => addOrRemoveToWatchlist(route.params.anime)}
-                                style={{
-                                    display: 'flex',
-                                    flexDirection: 'column',
-                                    justifyContent: 'center',
-                                    alignItems: 'center',
-                                    marginHorizontal: 10,
-                                }}>
-                                {alreadyWatchlisted.length > 0 ? (
-                                    <IonIcons name="heart" color="#4ded77" size={23} />
-                                ) : (
-                                    <IonIcons name="heart-outline" color="#4ded77" size={23} />
-                                )}
-                                <Text style={{ color: '#4ded77', fontSize: 12 }}>Watchlist</Text>
-                            </TouchableOpacity>
-                            <TouchableOpacity
+                                color="#4ded77"
+                                icon="play-circle-outline"
+                                name="Episode 1"
+                            />
+                            <Margin ml={10} mr={10}>
+                                <TouchableOpacity
+                                    onPress={() => addOrRemoveToWatchlist(route.params.anime)}>
+                                    <FlexCol yPosition="center" xPosition="center">
+                                        {alreadyWatchlisted.length > 0 ? (
+                                            <IonIcons name="heart" color="#4ded77" size={23} />
+                                        ) : (
+                                            <IonIcons
+                                                name="heart-outline"
+                                                color="#4ded77"
+                                                size={23}
+                                            />
+                                        )}
+                                    </FlexCol>
+                                    <Text color="secondary" size={14}>
+                                        Watchlist
+                                    </Text>
+                                </TouchableOpacity>
+                            </Margin>
+                            <CTACustom
                                 onPress={() => onShare()}
-                                style={{
-                                    display: 'flex',
-                                    flexDirection: 'column',
-                                    justifyContent: 'center',
-                                    alignItems: 'center',
-                                    marginHorizontal: 10,
-                                }}>
-                                <IonIcons name="share-social-outline" color="#4ded77" size={23} />
-                                <Text style={{ color: '#4ded77', fontSize: 12 }}>Partager</Text>
-                            </TouchableOpacity>
-                        </View>
-                    </View>
+                                color="#4ded77"
+                                icon="share-social-outline"
+                                name="Partager"
+                            />
+                        </FlexRow>
+                    </FlexCol>
                 </Container>
-            </View>
+            </FlexRow>
             <Container>
-                <Text
-                    numberOfLines={seeMore ? 9999 : 3}
-                    style={{ color: '#bdc3c7', marginTop: 10 }}>
+                <Margin mt={10} />
+                <TextRN numberOfLines={seeMore ? 9999 : 3} style={{ color: '#bdc3c7' }}>
                     {description}
-                </Text>
-                <TouchableOpacity
-                    onPress={() => setSeeMore(prevState => !prevState)}
-                    style={{ marginVertical: 5 }}>
-                    <Text style={{ color: '#4ded77' }}>Voir {seeMore ? 'moins' : 'plus'}</Text>
-                </TouchableOpacity>
+                </TextRN>
+                <Margin mt={5} mb={5}>
+                    <TouchableOpacity onPress={() => setSeeMore(prevState => !prevState)}>
+                        <Text color="secondary">Voir {seeMore ? 'moins' : 'plus'}</Text>
+                    </TouchableOpacity>
+                </Margin>
                 <FlatList
                     data={videos.saisons[0]}
                     renderItem={({ item }) => <VideoCard video={item} />}
                     keyExtractor={item => item.id}
                     ListFooterComponent={
-                        <Text style={{ color: '#95a5a6', fontSize: 12 }}>
+                        <Text color="gray" size={12}>
                             © {author}, {title}
                         </Text>
                     }

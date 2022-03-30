@@ -10,10 +10,9 @@ export const TextInput: React.FC<TextInputTypes> = ({
     value,
     onChangeText,
     style,
-    color,
     secureTextEntry,
 }) => (
-    <View color={color} style={style}>
+    <View style={style}>
         <IconContainer style={style}>
             <IonIcons name={icon} size={18} />
         </IconContainer>
@@ -21,7 +20,6 @@ export const TextInput: React.FC<TextInputTypes> = ({
             placeholder={placeholder}
             value={value}
             onChangeText={onChangeText}
-            color={color}
             cstyle={style}
             secureTextEntry={secureTextEntry}
         />
@@ -36,18 +34,21 @@ const View = styled.View`
     margin-top: 15px;
     margin-bottom: 15px;
     border-radius: 10px;
-    background-color: ${({ style }: any) => (style?.bgColor ? style.bgColor : 'white')};
+    background-color: ${({ style, theme }: any) =>
+        style?.bgColor ? style.bgColor : theme.colors.gray};
 `
 
 const IconContainer = styled.View`
     margin-right: 10px;
-    background-color: ${({ style }: any) => (style?.bgColor ? style.bgColor : 'white')};
+    background-color: ${({ style, theme }: any) =>
+        style?.bgColor ? style.bgColor : theme.colors.gray};
     border: none;
 `
 
 const TextInputContainer = styled.TextInput`
     flex: 1;
     border-radius: 5px;
-    background-color: ${({ cstyle }: any) => (cstyle?.bgColor ? cstyle.bgColor : 'white')};
+    background-color: ${({ cstyle, theme }: any) =>
+        cstyle?.bgColor ? cstyle.bgColor : theme.colors.gray};
     color: black;
 `

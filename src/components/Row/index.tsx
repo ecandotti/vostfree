@@ -1,19 +1,19 @@
-import { View, FlatList } from 'react-native'
+import { FlatList } from 'react-native'
 import React from 'react'
 
-import { RowTypes } from 'src/types/RowTypes'
+import { RowTypes } from '@customTypes/RowTypes'
 
+import { TitleText, Container, FlexRow, Bar, Margin } from '@components/styled-components'
 import Card from '@components/Card'
-import { TitleText, Container } from '@components/styled-components'
 
 const Index: React.FC<RowTypes> = ({ title, items }) => {
     return (
-        <View style={{ marginTop: 10 }}>
+        <Margin mt={10}>
             <Container>
-                <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                <FlexRow yPosition="center">
                     <TitleText title={title} />
-                    <View style={{ width: '100%', height: 12, backgroundColor: '#4ded77' }} />
-                </View>
+                    <Bar width="100%" height="12" bgColor="#4ded77" />
+                </FlexRow>
             </Container>
             <FlatList
                 data={items}
@@ -23,7 +23,7 @@ const Index: React.FC<RowTypes> = ({ title, items }) => {
                 showsHorizontalScrollIndicator={false}
                 horizontal
             />
-        </View>
+        </Margin>
     )
 }
 

@@ -5,7 +5,6 @@ export interface TextInputTypes {
     placeholder?: string
     value?: string
     onChangeText: any
-    color: string
     secureTextEntry?: boolean
     style?: any
     type: React.HTMLInputTypeAttribute

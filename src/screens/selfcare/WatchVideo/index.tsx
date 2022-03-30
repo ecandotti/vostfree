@@ -1,20 +1,18 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { View } from 'react-native'
 import VideoPlayer from 'react-native-video-player'
 
 import { ScreenTypes } from '@customTypes/ScreenTypes'
 
-import { Container, TitleText } from '@components/styled-components'
+import { Container, TitleText, PText } from '@components/styled-components'
 
-const Index: React.FC<ScreenTypes> = ({ navigation, route }) => {
+const Index: React.FC<ScreenTypes> = ({ route }) => {
     const videoUri: string = route.params.videoUri
 
     const isHttpLink = () => {
         const result = videoUri.split(':')[0]
         return result === 'https'
     }
-
-    console.log(videoUri, isHttpLink())
 
     return (
         <View>
@@ -26,11 +24,11 @@ const Index: React.FC<ScreenTypes> = ({ navigation, route }) => {
             />
             <Container>
                 <TitleText title="Description" />
-                <Text style={{ color: 'white', lineHeight: 20, marginTop: 10 }}>
+                <PText>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cum esse
                     sint facilis autem, mollitia, laboriosam earum fuga eum laborum exercitationem
                     maxime voluptatem sit. Eius, consequatur. Alias sunt fuga a!
-                </Text>
+                </PText>
             </Container>
         </View>
     )

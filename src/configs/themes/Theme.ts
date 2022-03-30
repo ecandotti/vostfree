@@ -1,11 +1,9 @@
-const lightTheme = {
-    primary: "red",
-    secondary: "blue",
+const myTheme = {
+    colors: {
+        primary: '#ffffff',
+        secondary: '#4ded77',
+        gray: '#bdc3c7',
+    },
 }
 
-const darkTheme = {
-    primary: "black",
-    secondary: "green",
-}
-
-export { lightTheme, darkTheme }
+export { myTheme }

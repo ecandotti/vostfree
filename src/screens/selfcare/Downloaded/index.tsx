@@ -1,13 +1,12 @@
-import { View, Text, FlatList } from 'react-native'
-import React, { useContext, useEffect, useState } from 'react'
 import RNFS from 'react-native-fs'
+import { FlatList } from 'react-native'
+import React, { useContext, useEffect, useState } from 'react'
+import { useFocusEffect, useNavigation } from '@react-navigation/native'
 
 import AnimeContext from '@configs/contexts/AnimeContext'
 
-import { Container, Button } from '@components/styled-components'
-
+import { Container, Button, FlexRow, PText, Margin } from '@components/styled-components'
 import { ScreenTypes } from '@customTypes/ScreenTypes'
-import { useFocusEffect, useNavigation } from '@react-navigation/native'
 
 const Index: React.FC<ScreenTypes> = () => {
     const navigation = useNavigation()
@@ -31,7 +30,7 @@ const Index: React.FC<ScreenTypes> = () => {
 
     const renderCard = (item: any) => {
         return (
-            <View style={{ display: 'flex', flexDirection: 'row' }}>
+            <FlexRow>
                 <Button
                     onPress={() =>
                         navigation.navigate('WatchVideo', {
@@ -47,7 +46,7 @@ const Index: React.FC<ScreenTypes> = () => {
                     icon="trash-outline"
                     style={{ bgColor: '#c0392b', color: 'white' }}
                 />
-            </View>
+            </FlexRow>
         )
     }
 
@@ -60,9 +59,9 @@ const Index: React.FC<ScreenTypes> = () => {
                     keyExtractor={(item: any) => item.path}
                 />
             ) : (
-                <Text style={{ color: 'white', textAlign: 'center', marginVertical: 20 }}>
-                    Vous n'avez rien téléchargé
-                </Text>
+                <Margin ml={20} mr={20}>
+                    <PText>Vous n'avez rien téléchargé</PText>
+                </Margin>
             )}
         </Container>
     )
