@@ -8,8 +8,10 @@
 | React Navigation  | Router in App      |
 | React Vector      | Icons              |
 | AsyncStorage      | Store info         |
-| FuseJS            | Search in object   |
+| React FS          | Use filesystem     |
 | Styled-Components | CSS in Mobile      |
+
+and more...
 
 Babel  
 Prettier & ESLint for beautiful code 🥰
