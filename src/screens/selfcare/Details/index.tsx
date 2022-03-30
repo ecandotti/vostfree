@@ -1,14 +1,16 @@
 import React, { useContext, useState } from 'react'
 import { Text as TextRN } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
-import { Image, View, TouchableOpacity, FlatList, Share } from 'react-native'
+import { Image, TouchableOpacity, FlatList, Share } from 'react-native'
 import IonIcons from 'react-native-vector-icons/Ionicons'
 
 import { ScreenTypes } from '@customTypes/ScreenTypes'
 
 import AnimeContext from '@configs/contexts/AnimeContext'
+import { myTheme } from '@configs/themes/Theme'
 
 import { Container, FlexCol, FlexRow, Margin, TitleText, Text } from '@components/styled-components'
+
 import VideoCard from '@components/VideoCard'
 import CTACustom from '@components/CTACustom'
 
@@ -64,7 +66,7 @@ const Index: React.FC<ScreenTypes> = ({ route }) => {
                                         videoUri: videos.saisons[0][0].path,
                                     })
                                 }
-                                color="#4ded77"
+                                color={myTheme.colors.secondary}
                                 icon="play-circle-outline"
                                 name="Episode 1"
                             />
@@ -73,11 +75,15 @@ const Index: React.FC<ScreenTypes> = ({ route }) => {
                                     onPress={() => addOrRemoveToWatchlist(route.params.anime)}>
                                     <FlexCol yPosition="center" xPosition="center">
                                         {alreadyWatchlisted.length > 0 ? (
-                                            <IonIcons name="heart" color="#4ded77" size={23} />
+                                            <IonIcons
+                                                name="heart"
+                                                color={myTheme.colors.secondary}
+                                                size={23}
+                                            />
                                         ) : (
                                             <IonIcons
                                                 name="heart-outline"
-                                                color="#4ded77"
+                                                color={myTheme.colors.secondary}
                                                 size={23}
                                             />
                                         )}
@@ -89,7 +95,7 @@ const Index: React.FC<ScreenTypes> = ({ route }) => {
                             </Margin>
                             <CTACustom
                                 onPress={() => onShare()}
-                                color="#4ded77"
+                                color={myTheme.colors.secondary}
                                 icon="share-social-outline"
                                 name="Partager"
                             />
@@ -99,7 +105,7 @@ const Index: React.FC<ScreenTypes> = ({ route }) => {
             </FlexRow>
             <Container>
                 <Margin mt={10} />
-                <TextRN numberOfLines={seeMore ? 9999 : 3} style={{ color: '#bdc3c7' }}>
+                <TextRN numberOfLines={seeMore ? 9999 : 3} style={{ color: myTheme.colors.gray }}>
                     {description}
                 </TextRN>
                 <Margin mt={5} mb={5}>

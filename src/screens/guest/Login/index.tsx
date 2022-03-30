@@ -46,11 +46,7 @@ const Index: React.FC = () => {
                     icon="key-outline"
                     type="password"
                 />
-                <Button
-                    title="Connexion"
-                    onPress={() => login(user)}
-                    style={{ bgColor: '#3c9648' }}
-                />
+                <Button title="Connexion" onPress={() => login(user)} colorType="secondary" />
             </FlexCol>
         </Container>
     )

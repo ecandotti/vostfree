@@ -26,8 +26,8 @@ yarn install
 
 npx pod-install ios
 
-yarn ios
 yarn start
+yarn ios
 ```
 
 We can :

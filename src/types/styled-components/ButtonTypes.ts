@@ -1,9 +1,6 @@
 export interface ButtonTypes {
     title: string
     onPress: () => void
-    style?: {
-        color?: string
-        bgColor?: string
-    }
+    colorType: 'primary' | 'secondary' | 'danger' | 'info'
     icon?: string
 }

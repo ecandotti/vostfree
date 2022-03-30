@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
+import { useNavigation } from '@react-navigation/native'
 import { View, Image, TouchableOpacity } from 'react-native'
 import IonIcons from 'react-native-vector-icons/Ionicons'
 
 import AnimeContext from '@configs/contexts/AnimeContext'
 
 import { FlexRow, TitleText, Text, FlexCol, Padding, Margin } from '../styled-components'
-import { useNavigation } from '@react-navigation/native'
 
 const Index: React.FC<any> = ({ video }) => {
     const navigation = useNavigation()

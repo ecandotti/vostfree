@@ -38,13 +38,14 @@ const Index: React.FC<ScreenTypes> = () => {
                         })
                     }
                     title={item.name}
-                    style={{ bgColor: '#3c9648' }}
+                    colorType="secondary"
                 />
+                <Margin ml={5} />
                 <Button
                     onPress={() => deleteNow(item.path)}
                     title=""
                     icon="trash-outline"
-                    style={{ bgColor: '#c0392b', color: 'white' }}
+                    colorType="danger"
                 />
             </FlexRow>
         )

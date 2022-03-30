@@ -3,6 +3,7 @@ import { Image, TouchableOpacity } from 'react-native'
 
 import { CardTypes } from '@customTypes/CardTypes'
 import { useNavigation } from '@react-navigation/native'
+
 import { FlexCol, Margin, Text } from '../styled-components'
 
 const Index: React.FC<CardTypes> = ({ item }) => {

@@ -15,7 +15,7 @@ const Index: React.FC<ScreenTypes> = () => {
                 title="Deconnexion"
                 onPress={() => logout()}
                 icon="lock-open-outline"
-                style={{ color: 'white' }}
+                colorType="info"
             />
         </Container>
     )
