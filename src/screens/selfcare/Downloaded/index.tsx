@@ -1,18 +1,35 @@
-import { View, Text, FlatList, StyleSheet } from 'react-native'
-import React, { useContext } from 'react'
-import Video from 'react-native-video'
+import { View, Text, FlatList } from 'react-native'
+import React, { useContext, useEffect, useState } from 'react'
+import RNFS from 'react-native-fs'
 
 import AnimeContext from '@configs/contexts/AnimeContext'
 
 import { Container, Button } from '@components/styled-components'
 
 import { ScreenTypes } from '@customTypes/ScreenTypes'
-import { useNavigation } from '@react-navigation/native'
+import { useFocusEffect, useNavigation } from '@react-navigation/native'
 
 const Index: React.FC<ScreenTypes> = () => {
     const navigation = useNavigation()
 
-    const { downloadedList, deleteNow } = useContext(AnimeContext)
+    const { deleteNow } = useContext(AnimeContext)
+
+    const [downloadedList, setDownloadedList] = useState<any>([])
+
+    const getDownloadedAnime = () => {
+        RNFS.readDir(RNFS.DocumentDirectoryPath).then(data => {
+            setDownloadedList(data)
+            console.log(data)
+        })
+    }
+
+    useEffect(() => {
+        getDownloadedAnime()
+    }, [])
+
+    useFocusEffect(() => {
+        getDownloadedAnime()
+    })
 
     const renderCard = (item: any) => {
         return (

@@ -1,6 +1,6 @@
 # 💥📱 VOSTFREE App
 
-## Project in ReactNative for DevMobile cours (Ynov)
+## Project in ReactNative for DevMobile cours (Ynov) [Tested on iPhone 12 iOS 15.4]
 
 | Library used      | Utility            |
 | ----------------- | ------------------ |
@@ -15,15 +15,16 @@ Babel
 Prettier & ESLint for beautiful code 🥰
 
 Launch the code :  
-_Don't forget to update your .env.example to .env.local and set variables_
+_Don't forget to update your .env.example to .env.local_
 
 ```
 git clone https://github.com/ecandotti/vost-app.git
 cd /vost-app
 yarn install
 
-npx pod-install
+npx pod-install ios
 
+yarn ios
 yarn start
 ```
 
@@ -50,5 +51,4 @@ To Do :
 -   [x] Add/Remove/Read/Store Watchlist
 -   [x] Store Watchlist in cache
 -   [x] Download video in cache
--   [_] Add Ads
 -   [x] Design

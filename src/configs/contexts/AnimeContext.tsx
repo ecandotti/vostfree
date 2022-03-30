@@ -63,7 +63,6 @@ export const AnimeContextProvider: React.FC = ({ children }) => {
                 fromUrl: `${item.path}`,
                 toFile: pathVideo,
                 background: true,
-                progress: (res: any) => console.log('progress : ', res),
             }
 
             await RNFS.downloadFile(videoOptions)

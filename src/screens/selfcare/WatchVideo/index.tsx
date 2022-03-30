@@ -11,8 +11,10 @@ const Index: React.FC<ScreenTypes> = ({ navigation, route }) => {
 
     const isHttpLink = () => {
         const result = videoUri.split(':')[0]
-        return result === 'https' ? true : false
+        return result === 'https'
     }
+
+    console.log(videoUri, isHttpLink())
 
     return (
         <View>
