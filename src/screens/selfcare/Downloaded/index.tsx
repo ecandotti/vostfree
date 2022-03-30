@@ -16,11 +16,9 @@ const Index: React.FC<ScreenTypes> = () => {
 
     const [downloadedList, setDownloadedList] = useState<any>([])
 
-    const getDownloadedAnime = () => {
-        RNFS.readDir(RNFS.DocumentDirectoryPath).then(data => {
-            setDownloadedList(data)
-            console.log(data)
-        })
+    const getDownloadedAnime = async () => {
+        const newList = await RNFS.readDir(RNFS.DocumentDirectoryPath)
+        setDownloadedList(newList)
     }
 
     useEffect(() => {
